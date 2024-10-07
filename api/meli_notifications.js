@@ -10,7 +10,15 @@ app.use(express.json());
 app.post('/api/mercado-livre-notifications', async (req, res) => {
   try {
     // Reenvia os dados para o backend Flask
-    await axios.post('https://b54e-45-163-2-79.ngrok-free.app/notifications', req.body);
+    await axios.post(
+      'https://b54e-45-163-2-79.ngrok-free.app/notifications',
+      req.body,
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
     res.status(200).send('OK');
   } catch (error) {
     console.error('Erro ao processar a notificação:', error);
