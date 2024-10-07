@@ -1,10 +1,17 @@
 {
-    "name": "mercado-livre-notifications",
-    "version": "1.0.0",
-    "main": "api/mercado-livre-notifications.js",
-    "dependencies": {
-      "axios": "^0.21.1",
-      "express": "^4.17.1"
-    }
-  }
-  
+  "name": "api_notifications",
+  "version": "1.0.0",
+  "main": "api/meli_notifications.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+"scripts": {
+  "dev": "nodemon api/meli_notifications.js"
+}
+
+}
