@@ -11,7 +11,7 @@ app.post('/api/mercado-livre-notifications', async (req, res) => {
   try {
     // Reenvia os dados para o backend Flask
     await axios.post(
-      'https://6f3c-45-163-2-79.ngrok-free.app/api/notifications',
+      'https://eb40-45-163-2-79.ngrok-free.app/api/notifications',
       req.body,
       {
         headers: {
